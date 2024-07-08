@@ -1,7 +1,24 @@
 
 const prompt = require('prompt-sync')({ sigint: true });
-
 repete()
+
+function menu() {
+    console.log(`escolha uma opção
+    1. calculadora
+    2.
+    `)
+
+    const pergunta = prompt("escolha uma opcção")
+    switch (pergunta) {
+        case '1':
+            calculadora()
+            
+            break;
+    
+        default:
+            break;
+    }
+}
 function repete() {
 
     const nome = prompt("Digite o seu nome :")
@@ -15,7 +32,6 @@ function repete() {
         repete()
     }
 }
-
 function calculadora() {
     var calculos = []
     let resultado1
@@ -41,16 +57,14 @@ function calculadora() {
             console.log(calculos)
             calculadora()
             return calculos
-
-
             break;
         case "/":
             resultado3 = Number(numero1) / Number(numero2)
             if (numero1 == 0 || numero2 == 0) {
                 console.log("zero não funciona")
-                
+
             }
-            calculos.push( resultado3)
+            calculos.push(resultado3)
             console.log(calculos)
             calculadora()
             return calculos
@@ -59,6 +73,7 @@ function calculadora() {
         case "*":
             resultado4 = Number(numero1) * Number(numero2)
             calculos.push(resultado4)
+
             console.log(calculos)
             calculadora()
             return resultado4
@@ -76,8 +91,6 @@ function calculadora() {
             break;
 
     }
-
-
     if (typeof numero1 !== 'number' || typeof numero2 !== 'number') {
         console.log("Por favor, digite números")
         calculadora()
