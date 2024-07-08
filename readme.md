@@ -19,7 +19,7 @@ consiste em fazer um requerimento de entrada com a variável `nome`. Utilizando 
 - A escolha vai cair em um `switch case` onde vai fazer as verificações com as operações `+, -, / , * e %(porcentagem)`. Dado cada resultado,vai armazenar o resultado em uma variável de `array`.
 
 -depois de proceder com as operações verificando  com `if else`se o usuário digitou números ou não.
--Se digitou números vai pedir para digitar números novamente
+-Se digitou números vai pedir para digitar números novamente.
 
 
 
